@@ -1,0 +1,214 @@
+<!-- =========================
+hero section
+===========================-->
+
+<section
+  class="relative pt-[140px] md:pt-[200px] 2xl:pt-[250px] pb-16 md:pb-20 lg:pb-[100px] bg-background-2 dark:bg-background-5 overflow-hidden"
+  id="scene"
+>
+  <!-- BG Dot -->
+  <div
+    data-ns-animate
+    data-delay="1"
+    data-duration="2"
+    class="absolute opacity-0 animate-pulse -z-0 max-md:w-full top-[10%] lg:top-[8%] left-1/2 -translate-x-1/2"
+  >
+    <img
+      src="./images/ns-img-hero-dot-bg.png"
+      alt="Hero background"
+      class="w-full h-full object-cover"
+    />
+  </div>
+
+  <!-- Main Content Container -->
+  <div class="main-container relative z-30 px-4 sm:px-6">
+    
+    <!-- Header -->
+    <div class="text-center mb-12">
+      <span data-ns-animate data-delay="0.1" class="badge badge-green-v2 mb-5">
+        Our Expertise
+      </span>
+      <h1 data-ns-animate data-delay="0.2" class="font-medium mb-4 text-3xl md:text-5xl text-primary-900 dark:text-white">
+        Our
+        <span class="text-primary-500">Capabilities</span>
+      </h1>
+      <p data-ns-animate data-delay="0.3" class="max-w-[588px] mx-auto text-secondary/70 dark:text-white/70">
+        Choose a domain to explore how we drive value through technology.
+      </p>
+    </div>
+
+    <!-- SIDE BY SIDE INTERACTIVE SECTION -->
+    <!-- 'group/stage' detects when mouse enters the main area -->
+    <div class="group/stage flex flex-col lg:flex-row gap-6 lg:gap-12 max-w-[1240px] mx-auto items-stretch perspective-1000">
+
+      <!-- ==========================================
+           LEFT COLUMN: Digital Enablement 
+           ========================================== -->
+      <div class="flex-1 relative bg-white dark:bg-white/5 border border-stroke-3 dark:border-stroke-7 rounded-3xl p-6 md:p-8 
+                  transform-gpu transition-all duration-500 ease-out origin-center
+                  
+                  /* DEFAULT STATE */
+                  scale-100 opacity-100 filter-none
+
+                  /* PARENT HOVER STATE (When mouse is in the container, shrink/blur THIS item) */
+                  lg:group-hover/stage:scale-90 
+                  lg:group-hover/stage:opacity-40 
+                  lg:group-hover/stage:blur-[6px]
+
+                  /* SELF HOVER STATE (Override parent! Zoom in, clear up, bring to front) */
+                  lg:hover:!scale-110 
+                  lg:hover:!opacity-100 
+                  lg:hover:!filter-none 
+                  lg:hover:shadow-2xl 
+                  lg:hover:z-20
+                  lg:hover:border-primary-500/30">
+        
+        <!-- Column Header -->
+        <div class="flex items-center gap-4 mb-8 border-b border-stroke-3 dark:border-white/10 pb-6">
+           <div class="size-14 rounded-full bg-primary-500/10 flex items-center justify-center text-primary-500 shrink-0">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z" />
+             </svg>
+           </div>
+           <div>
+             <h2 class="text-2xl font-bold text-primary-900 dark:text-white">Digital Enablement</h2>
+             <p class="text-sm text-secondary/60 dark:text-white/50">Operations & Growth</p>
+           </div>
+        </div>
+
+        <!-- Items List -->
+        <div class="space-y-6">
+          <!-- Item 1 -->
+          <div>
+            <h3 class="text-lg font-bold text-primary-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-primary-500 shrink-0"></span>
+              Enterprise & Custom Solutions
+            </h3>
+            <p class="text-sm text-secondary/70 dark:text-white/60 pl-4 border-l-2 border-stroke-3 dark:border-white/10">
+              Streamline and transform your operations through our expertise in ERPs, CRMs, and custom-built solutions.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div>
+            <h3 class="text-lg font-bold text-primary-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-primary-500 shrink-0"></span>
+              Cloud Computing
+            </h3>
+            <p class="text-sm text-secondary/70 dark:text-white/60 pl-4 border-l-2 border-stroke-3 dark:border-white/10">
+              Realize faster, more resilient operations through our cloud strategies, ensuring you can manage cloud environments confidently.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div>
+            <h3 class="text-lg font-bold text-primary-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-primary-500 shrink-0"></span>
+              Data & AI
+            </h3>
+            <p class="text-sm text-secondary/70 dark:text-white/60 pl-4 border-l-2 border-stroke-3 dark:border-white/10">
+              Unlock predictive insights and automation through our data and AI solutions to drive tangible business outcomes.
+            </p>
+          </div>
+
+          <!-- Item 4 -->
+          <div>
+            <h3 class="text-lg font-bold text-primary-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-primary-500 shrink-0"></span>
+              Product Innovation
+            </h3>
+            <p class="text-sm text-secondary/70 dark:text-white/60 pl-4 border-l-2 border-stroke-3 dark:border-white/10">
+              Design and deliver products and experiences that delight customers and drive business growth.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ==========================================
+           RIGHT COLUMN: Digital Trust 
+           ========================================== -->
+      <div class="flex-1 relative bg-white dark:bg-white/5 border border-stroke-3 dark:border-stroke-7 rounded-3xl p-6 md:p-8 
+                  transform-gpu transition-all duration-500 ease-out origin-center
+                  
+                  /* DEFAULT STATE */
+                  scale-100 opacity-100 filter-none
+
+                  /* PARENT HOVER STATE */
+                  lg:group-hover/stage:scale-90 
+                  lg:group-hover/stage:opacity-40 
+                  lg:group-hover/stage:blur-[6px]
+
+                  /* SELF HOVER STATE */
+                  lg:hover:!scale-110 
+                  lg:hover:!opacity-100 
+                  lg:hover:!filter-none 
+                  lg:hover:shadow-2xl 
+                  lg:hover:z-20
+                  lg:hover:border-ns-green/30">
+        
+        <!-- Column Header -->
+        <div class="flex items-center gap-4 mb-8 border-b border-stroke-3 dark:border-white/10 pb-6">
+           <div class="size-14 rounded-full bg-ns-green/10 flex items-center justify-center text-ns-green shrink-0">
+             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-7">
+               <path stroke-linecap="round" stroke-linejoin="round" d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+             </svg>
+           </div>
+           <div>
+             <h2 class="text-2xl font-bold text-primary-900 dark:text-white">Digital Trust</h2>
+             <p class="text-sm text-secondary/60 dark:text-white/50">Security & Governance</p>
+           </div>
+        </div>
+
+        <!-- Items List -->
+        <div class="space-y-6">
+          <!-- Item 1 -->
+          <div>
+            <h3 class="text-lg font-bold text-primary-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-ns-green shrink-0"></span>
+              Cybersecurity
+            </h3>
+            <p class="text-sm text-secondary/70 dark:text-white/60 pl-4 border-l-2 border-stroke-3 dark:border-white/10">
+              Protect your business from evolving threats with robust cybersecurity strategies, building stakeholder confidence.
+            </p>
+          </div>
+
+          <!-- Item 2 -->
+          <div>
+            <h3 class="text-lg font-bold text-primary-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-ns-green shrink-0"></span>
+              Technology Risk & Compliance
+            </h3>
+            <p class="text-sm text-secondary/70 dark:text-white/60 pl-4 border-l-2 border-stroke-3 dark:border-white/10">
+              Anticipate, manage, and mitigate operational and regulatory risks through structured IT risk and compliance solutions.
+            </p>
+          </div>
+
+          <!-- Item 3 -->
+          <div>
+            <h3 class="text-lg font-bold text-primary-900 dark:text-white mb-2 flex items-center gap-2">
+              <span class="w-2 h-2 rounded-full bg-ns-green shrink-0"></span>
+              Technology Governance
+            </h3>
+            <p class="text-sm text-secondary/70 dark:text-white/60 pl-4 border-l-2 border-stroke-3 dark:border-white/10">
+              Ensure your IT landscape drives business forward through leading methodologies such as Agile and DevOps.
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Background Border Decorations -->
+  <div
+    data-ns-animate
+    data-delay="1"
+    class="hidden md:block absolute w-full h-full top-0 left-0 pointer-events-none before:content-[''] before:absolute before:left-[6%] before:w-[1px] before:h-[90%] before:bg-[linear-gradient(180deg,#ECE8FF_0%,#FAF9FC_100%)] dark:before:bg-[linear-gradient(180deg,_#1b232f_0%,#13171E_100%)] before:top-0 before:z-0 after:content-[''] after:absolute after:right-[6%] after:-z-10 after:w-[1px] after:h-[90%] after:bg-[linear-gradient(180deg,#ECE8FF_0%,#FAF9FC_100%)] dark:after:bg-[linear-gradient(180deg,_#1b232f_0%,#13171E_100%)] after:top-0"
+  >
+    <div
+      data-ns-animate
+      data-delay="1"
+      class="opacity-0 absolute w-[100%] h-[1px] bg-stroke-1 dark:bg-stroke-5 top-[6.5%] before:absolute before:content-[''] before:w-2 before:h-2 before:bg-stroke-1 dark:before:bg-stroke-5 before:left-[5.8%] before:z-20 before:-top-1 before:ring-8 before:ring-background-2 dark:before:ring-background-5 before:rotate-45 after:absolute after:content-[''] after:w-2 after:h-2 after:bg-stroke-1 dark:after:bg-stroke-5 after:ring-8 after:ring-background-2 dark:after:ring-background-5 after:right-[5.8%] after:z-20 after:-top-1 after:rotate-[-45deg]"
+    ></div>
+  </div>
+</section>
